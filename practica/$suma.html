@@ -1,0 +1,27 @@
+<script>
+    /* Suma de números pares e impares:
+    Escribe un programa que sume todos los números pares e impares por separado dentro de un rango especificado por el usuario.*/
+
+    // se almacena todos lo numero ingresados
+    let valores = [];
+    let par = 0;
+    let imp = 0;
+    let limite = Number(prompt('ingrese cuantos numero va a ingresar'))
+
+    for (let i = 0; i < limite; i++) {
+        let valor = prompt(`Ingrese el valor ${i + 1}:`);
+        // el push agregar nuevos numero al final
+        valores.push(valor);
+        // se evalua cada uno de lo numero ingresado
+        if (valores[i] % 2 == 0) {
+            par += 1
+        } else {
+            imp += 1;
+        }
+    }
+    // imprime todos los numero almacenado del array
+    console.log(valores);
+    // imprime el contador total
+    console.log('hay ', par, ' pares');
+    console.log('hay ', imp, ' impares');
+</script>

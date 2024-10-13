@@ -1,0 +1,18 @@
+<script>
+    //Validación de números primos:
+    //Crea una función que determine si un número ingresado por el usuario es primo o no.
+    
+    let n = Number(prompt('ingrese un numero , si es perfecto '));
+    let sumaDivi = 0;
+    for (let i = 1; i <= n/2; i++) {
+        if (n % i === 0) {
+            sumaDivi += i;
+        }
+        
+    }
+    if (sumaDivi == n ) {
+        console.log(n,' es un numero perfecto');
+    }else{
+        console.log(n,' no es un numero perfecto');
+    }
+</script>

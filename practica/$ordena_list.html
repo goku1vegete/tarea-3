@@ -1,0 +1,28 @@
+<script>
+    /* Ordenamiento de listas:
+     Implementa un algoritmo de ordenamiento (como bubble sort o quicksort) para ordenar una lista de números en orden ascendente o descendente.*/
+
+    // Lista de números para ordenar
+    let nums = [5, 3, 10, 2, 1, 4,20,70,100];
+
+    // Mostrar la lista original
+    console.log("Lista original:", nums);
+
+    // Bubble sort para orden ascendente
+    let sic = nums.length;
+    for (let i = 0; i < sic - 1; i++) {
+        for (let j = 0; j < sic -1 - i; j++) {
+            if (nums[j] > nums[j + 1]){
+                let temp = nums[j];
+                nums[j] = nums[j +1];
+                nums[j + 1] = temp;
+            }
+        }
+    }
+
+    // Mostrar la lista ordenada
+    console.log("Lista ordenada (ascendente):", nums);
+
+
+
+</script>

@@ -129,7 +129,7 @@ function despedir() {
 const resultado = ejecutarFuncion(true, saludar, despedir);
 console.log(resultado); 
 
-const resultado2 = ejecutarFuncion(false, saludar, despedir);
+const resultado2 = ejecutarFuncion(false,saludar,despedir);
 console.log(resultado2); 
 
 //20. Diseña una función de orden superior que modifique un objeto utilizando otra función 
